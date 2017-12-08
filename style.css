@@ -1,0 +1,36 @@
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.barbarian {
+  background: url("barbarian_run.png") no-repeat;
+  height: 801px;
+  width: 1201px;
+  position: absolute;
+  animation: barbarian 1s steps(12) infinite, move 3s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: 10;
+}
+
+@keyframes barbarian {
+  
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -200px;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 100%;
+  }
+}
